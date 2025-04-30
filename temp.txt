@@ -1,0 +1,3 @@
+python si.py --input output/relevant_chunks.csv --output sarcasm_results.csv --model sarcasm_checkpoint_chunk_0.pt
+python sarcasm.py --input output/relevant_chunks.csv --output sarcasm_predictions.csv --model sarcasm_model.pth
+python merge.py --emotion_csv output/emotion_predictions.csv --sarcasm_csv sarcasm_predictions.csv --output_csv final_merged_predictions.csv
